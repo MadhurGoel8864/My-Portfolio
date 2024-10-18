@@ -33,7 +33,7 @@ function AchievementCard({id, title, details, date, field, image}) {
                     <div className="achievecard-details2" style={{color: theme.primary}}>
                         <h5>{date}</h5>
                         <div className="achievecard-field">
-                            <AiOutlineFolder />
+                            {/* <AiOutlineFolder /> */}
                             <h5>{field}</h5>
                         </div>   
                     </div>

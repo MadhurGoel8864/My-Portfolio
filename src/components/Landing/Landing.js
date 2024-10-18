@@ -7,13 +7,10 @@ import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
-
+import { SiLeetcode,SiGeeksforgeeks,SiCodechef  } from "react-icons/si";
 import {
-    FaTwitter,
     FaLinkedin,
-    FaGithub,
-    FaYoutube,
-    FaBlogger,
+    FaGithub
 } from 'react-icons/fa';
 
 function Landing() {
@@ -101,42 +98,42 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
+                        {socialsData.codechef && (
                             <a
-                                href={socialsData.twitter}
+                                href={socialsData.codechef}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
+                                <SiCodechef
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
+                                    aria-label='CodeChef'
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {socialsData.leetcode && (
                             <a
-                                href={socialsData.youtube}
+                                href={socialsData.leetcode}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                <SiLeetcode
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
+                                    aria-label='LeetCode'
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {socialsData.geeksforgeeks && (
                             <a
-                                href={socialsData.blogger}
+                                href={socialsData.geeksforgeeks}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaBlogger
+                                <SiGeeksforgeeks
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='Blogger'
+                                    aria-label='Geeks For Geeks'
                                 />
                             </a>
                         )}

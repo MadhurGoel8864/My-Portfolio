@@ -17,7 +17,7 @@ function Skills() {
     }
 
     return (
-        <div className="skills" style={{backgroundColor: theme.secondary}}>
+        <div className="skills" style={{backgroundColor: theme.secondary}} id="skills">
             <div className="skillsHeader">
                 <h2 style={{color: theme.primary}}>Skills</h2>
             </div>
@@ -47,4 +47,4 @@ function Skills() {
     )
 }
 
-export default Skills
+export default Skills;

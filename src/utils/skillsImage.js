@@ -1,3 +1,5 @@
+import node from '../assets/svg/skills/node.svg'
+
 import gcp from '../assets/svg/skills/gcp.svg'
 import html from '../assets/svg/skills/html.svg'
 import photoshop from '../assets/svg/skills/photoshop.svg'
@@ -6,6 +8,7 @@ import docker from '../assets/svg/skills/docker.svg'
 import adobeXd from '../assets/svg/skills/adobe-xd.svg'
 import afterEffects from '../assets/svg/skills/after-effects.svg'
 import css from '../assets/svg/skills/css.svg'
+import bi from '../assets/svg/skills/pq.svg'
 import angular from '../assets/svg/skills/angular.svg'
 import javascript from '../assets/svg/skills/javascript.svg'
 import nextJS from '../assets/svg/skills/nextJS.svg'
@@ -25,7 +28,10 @@ import postgresql from '../assets/svg/skills/postgresql.svg'
 import tailwind from '../assets/svg/skills/tailwind.svg'
 import vitejs from '../assets/svg/skills/vitejs.svg'
 import vuetifyjs from '../assets/svg/skills/vuetifyjs.svg'
+import abc from '../assets/svg/skills/abcBI.svg'
 import c from '../assets/svg/skills/c.svg'
+import ml from '../assets/svg/skills/ml.svg'
+
 import cplusplus from '../assets/svg/skills/cplusplus.svg'
 import csharp from '../assets/svg/skills/csharp.svg'
 import dart from '../assets/svg/skills/dart.svg'
@@ -81,6 +87,11 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
+        case 'node js':
+            return node;
+        case 'machine learning':
+            return ml;
+            
         case 'html':
             return html;
         case 'photoshop':
@@ -91,6 +102,8 @@ export const skillsImage = (skill) => {
             return illustrator;
         case 'adobe xd':
             return adobeXd;
+        case 'mn':
+            return abc;
         case 'after effects':
             return afterEffects;
         case 'css':
@@ -101,9 +114,11 @@ export const skillsImage = (skill) => {
             return javascript;
         case 'next js':
             return nextJS;
+        case 'power bi':
+            return bi;
         case 'nuxt js':
             return nuxtJS;
-        case 'react':
+        case 'react js':
             return react;
         case 'svelte':
             return svelte;
